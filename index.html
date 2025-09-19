@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вам куда?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать!</h1>
+        <div class="buttons">
+            <a href="https://t.me/+6Cy75FfcGl5hOTFi" class="btn" target="_blank">TGK</a>
+            <a href="https://t.me/+tsMXHkMOdnwwN2Ri" class="btn" target="_blank">Тех.поддержка🛠️</a>
+        </div>
+
+        <!-- Кнопка для открытия выдвижной панели -->
+        <button class="menu-toggle" onclick="togglePanel()">☰ Меню</button>
+
+        <!-- Выдвижная панель -->
+        <div class="slide-panel" id="slidePanel">
+            <a href="https://t.me/nigtm1rror" class="admin-link" target="_blank">Связаться с администрацией канала</a>
+            <button class="close-btn" onclick="togglePanel()">✖ Закрыть</button>
+        </div>
+    </div>
+
+    <script>
+        function togglePanel() {
+            const panel = document.getElementById('slidePanel');
+            panel.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
